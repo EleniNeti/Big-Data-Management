@@ -8,6 +8,7 @@ result = FOREACH grp
                     GENERATE FLATTEN(group) AS (ID, Name, Sex), COUNT(golds.Medal) as Golds;
                    };
 
+
 limit5 = LIMIT result 100;
 
 DUMP limit5;

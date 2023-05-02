@@ -12,6 +12,7 @@ result = FOREACH grp
                    };
 
 
+
 result = ORDER result BY Golds DESC, Total DESC, Name DESC;
 
 DUMP result;

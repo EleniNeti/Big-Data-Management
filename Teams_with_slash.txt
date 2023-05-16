@@ -1,0 +1,44 @@
+                               Team  NOC
+3                    Denmark/Sweden  DEN
+20615               Pistoja/Firenze  ITA
+24683         Great Britain/Germany  GBR
+37866                 Barion/Bari-2  ITA
+42111                 Barion/Bari-2  ITA
+42115               Pistoja/Firenze  ITA
+50771          United States/France  USA
+52450          United States/France  FRA
+54975                 Barion/Bari-2  ITA
+56802   United States/Great Britain  GBR
+61290       Pannonia RC/National RC  HUN
+70080       Australia/Great Britain  AUS
+78991               Pistoja/Firenze  ITA
+80288         Germany/United States  USA
+90680       Pannonia RC/National RC  HUN
+90819         Germany/United States  GER
+92221       Pannonia RC/National RC  HUN
+103131              Pistoja/Firenze  ITA
+103135              Pistoja/Firenze  ITA
+110162  United States/Great Britain  USA
+119841      Pannonia RC/National RC  HUN
+120760      Pannonia RC/National RC  HUN
+146636         France/Great Britain  GBR
+151623              Pistoja/Firenze  ITA
+151795              Pistoja/Firenze  ITA
+153718              Pistoja/Firenze  ITA
+169788              Pistoja/Firenze  ITA
+171883               Denmark/Sweden  SWE
+193037         France/Great Britain  FRA
+201804      Australia/Great Britain  GBR
+204338        Bohemia/Great Britain  BOH
+209895  United States/Great Britain  USA
+213255               Denmark/Sweden  DEN
+224416               Denmark/Sweden  SWE
+227065               Denmark/Sweden  SWE
+234172      Pannonia RC/National RC  HUN
+243045        Great Britain/Germany  GER
+249981      Pannonia RC/National RC  HUN
+250488      Pannonia RC/National RC  HUN
+256375      Pannonia RC/National RC  HUN
+257093        Bohemia/Great Britain  GBR
+257094  United States/Great Britain  GBR
+261705               Denmark/Sweden  DEN

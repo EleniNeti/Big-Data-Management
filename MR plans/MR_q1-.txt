@@ -1,0 +1,183 @@
+#--------------------------------------------------
+# Map Reduce Plan
+#--------------------------------------------------
+MapReduce node scope-126
+Map Plan
+grp: Local Rearrange[tuple]{tuple}(false) - scope-110
+|   |
+|   Project[chararray][0] - scope-111
+|   |
+|   Project[chararray][1] - scope-112
+|   |
+|   Project[chararray][2] - scope-113
+|
+|---nonull: New For Each(false,false,false,false,false,false,false,false,false,false,false,false,false,false,false)[bag] - scope-107
+    |   |
+    |   Project[chararray][0] - scope-51
+    |   |
+    |   POBinCond[chararray] - scope-58
+    |   |
+    |   |---Matches - scope-55
+    |   |   |
+    |   |   |---Project[chararray][1] - scope-53
+    |   |   |
+    |   |   |---Constant(.* " .*) - scope-54
+    |   |
+    |   |---Constant() - scope-56
+    |   |
+    |   |---Project[chararray][1] - scope-57
+    |   |
+    |   Project[chararray][2] - scope-61
+    |   |
+    |   POBinCond[int] - scope-67
+    |   |
+    |   |---POIsNull[boolean] - scope-64
+    |   |   |
+    |   |   |---Project[int][3] - scope-63
+    |   |
+    |   |---Constant(0) - scope-65
+    |   |
+    |   |---Project[int][3] - scope-66
+    |   |
+    |   POBinCond[double] - scope-74
+    |   |
+    |   |---POIsNull[boolean] - scope-71
+    |   |   |
+    |   |   |---Project[double][4] - scope-70
+    |   |
+    |   |---Constant(0.0) - scope-72
+    |   |
+    |   |---Project[double][4] - scope-73
+    |   |
+    |   POBinCond[double] - scope-81
+    |   |
+    |   |---POIsNull[boolean] - scope-78
+    |   |   |
+    |   |   |---Project[double][5] - scope-77
+    |   |
+    |   |---Constant(0.0) - scope-79
+    |   |
+    |   |---Project[double][5] - scope-80
+    |   |
+    |   Project[chararray][6] - scope-84
+    |   |
+    |   Project[chararray][7] - scope-86
+    |   |
+    |   Project[chararray][8] - scope-88
+    |   |
+    |   Project[int][9] - scope-90
+    |   |
+    |   Project[chararray][10] - scope-92
+    |   |
+    |   Project[chararray][11] - scope-94
+    |   |
+    |   Project[chararray][12] - scope-96
+    |   |
+    |   Project[chararray][13] - scope-98
+    |   |
+    |   POBinCond[chararray] - scope-104
+    |   |
+    |   |---POIsNull[boolean] - scope-101
+    |   |   |
+    |   |   |---Project[chararray][14] - scope-100
+    |   |
+    |   |---Constant(Not Avail) - scope-102
+    |   |
+    |   |---Project[chararray][14] - scope-103
+    |
+    |---NoHeader: Filter[bag] - scope-47
+        |   |
+        |   Not Equal To[boolean] - scope-50
+        |   |
+        |   |---Constant(ID) - scope-48
+        |   |
+        |   |---Project[chararray][0] - scope-49
+        |
+        |---data: New For Each(false,false,false,false,false,false,false,false,false,false,false,false,false,false,false)[bag] - scope-46
+            |   |
+            |   Cast[chararray] - scope-2
+            |   |
+            |   |---Project[bytearray][0] - scope-1
+            |   |
+            |   Cast[chararray] - scope-5
+            |   |
+            |   |---Project[bytearray][1] - scope-4
+            |   |
+            |   Cast[chararray] - scope-8
+            |   |
+            |   |---Project[bytearray][2] - scope-7
+            |   |
+            |   Cast[int] - scope-11
+            |   |
+            |   |---Project[bytearray][3] - scope-10
+            |   |
+            |   Cast[double] - scope-14
+            |   |
+            |   |---Project[bytearray][4] - scope-13
+            |   |
+            |   Cast[double] - scope-17
+            |   |
+            |   |---Project[bytearray][5] - scope-16
+            |   |
+            |   Cast[chararray] - scope-20
+            |   |
+            |   |---Project[bytearray][6] - scope-19
+            |   |
+            |   Cast[chararray] - scope-23
+            |   |
+            |   |---Project[bytearray][7] - scope-22
+            |   |
+            |   Cast[chararray] - scope-26
+            |   |
+            |   |---Project[bytearray][8] - scope-25
+            |   |
+            |   Cast[int] - scope-29
+            |   |
+            |   |---Project[bytearray][9] - scope-28
+            |   |
+            |   Cast[chararray] - scope-32
+            |   |
+            |   |---Project[bytearray][10] - scope-31
+            |   |
+            |   Cast[chararray] - scope-35
+            |   |
+            |   |---Project[bytearray][11] - scope-34
+            |   |
+            |   Cast[chararray] - scope-38
+            |   |
+            |   |---Project[bytearray][12] - scope-37
+            |   |
+            |   Cast[chararray] - scope-41
+            |   |
+            |   |---Project[bytearray][13] - scope-40
+            |   |
+            |   Cast[chararray] - scope-44
+            |   |
+            |   |---Project[bytearray][14] - scope-43
+            |
+            |---data: Load(file:///home/eleni/athlete_events.csv:org.apache.pig.piggybank.storage.CSVExcelStorage) - scope-0--------
+Reduce Plan
+result: Store(fakefile:org.apache.pig.builtin.PigStorage) - scope-125
+|
+|---result: New For Each(true,false)[bag] - scope-124
+    |   |
+    |   Project[tuple][0] - scope-114
+    |   |
+    |   POUserFunc(org.apache.pig.builtin.COUNT)[long] - scope-118
+    |   |
+    |   |---Project[bag][14] - scope-117
+    |       |
+    |       |---RelationToExpressionProject[bag][*] - scope-116
+    |           |
+    |           |---golds: Filter[bag] - scope-120
+    |               |   |
+    |               |   Equal To[boolean] - scope-123
+    |               |   |
+    |               |   |---Project[chararray][14] - scope-121
+    |               |   |
+    |               |   |---Constant(Gold) - scope-122
+    |               |
+    |               |---Project[bag][1] - scope-119
+    |
+    |---grp: Package(Packager)[tuple]{tuple} - scope-109--------
+Global sort: false

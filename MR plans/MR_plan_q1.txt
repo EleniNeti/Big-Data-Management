@@ -1,0 +1,58 @@
+# Map Reduce Plan
+#--------------------------------------------------
+MapReduce node scope-32
+Map Plan
+grp: Local Rearrange[tuple]{tuple}(false) - scope-17
+|   |
+|   Project[chararray][0] - scope-18
+|   |
+|   Project[chararray][1] - scope-19
+|
+|---NoHeader: Filter[bag] - scope-11
+    |   |
+    |   Not Equal To[boolean] - scope-14
+    |   |
+    |   |---Constant(ID) - scope-12
+    |   |
+    |   |---Project[chararray][0] - scope-13
+    |
+    |---data: New For Each(false,false,false)[bag] - scope-10
+        |   |
+        |   Cast[chararray] - scope-2
+        |   |
+        |   |---Project[bytearray][0] - scope-1
+        |   |
+        |   Cast[chararray] - scope-5
+        |   |
+        |   |---Project[bytearray][1] - scope-4
+        |   |
+        |   Cast[chararray] - scope-8
+        |   |
+        |   |---Project[bytearray][2] - scope-7
+        |
+        |---data: Load(file:///home/eleni/athlete_events.csv:org.apache.pig.piggybank.storage.CSVExcelStorage) - scope-0--------
+Reduce Plan
+result: Store(fakefile:org.apache.pig.builtin.PigStorage) - scope-31
+|
+|---result: New For Each(true,false)[bag] - scope-30
+    |   |
+    |   Project[tuple][0] - scope-20
+    |   |
+    |   POUserFunc(org.apache.pig.builtin.COUNT)[long] - scope-24
+    |   |
+    |   |---Project[bag][2] - scope-23
+    |       |
+    |       |---RelationToExpressionProject[bag][*] - scope-22
+    |           |
+    |           |---golds: Filter[bag] - scope-26
+    |               |   |
+    |               |   Equal To[boolean] - scope-29
+    |               |   |
+    |               |   |---Project[chararray][2] - scope-27
+    |               |   |
+    |               |   |---Constant(Gold) - scope-28
+    |               |
+    |               |---Project[bag][1] - scope-25
+    |
+    |---grp: Package(Packager)[tuple]{tuple} - scope-16--------
+Global sort: false

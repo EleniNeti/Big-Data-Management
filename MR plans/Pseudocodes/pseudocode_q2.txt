@@ -1,0 +1,40 @@
+------------------ Map ---------------------------------------------------------------------------------------------------------------------------
+
+void Map(int lineNo, String line) {
+  
+  fields = split line by comma
+  Name = fields[1]
+  Games = fields[8]
+  Medal = fields[14]
+  
+  emit(pair(Name, Games), Medal);   
+
+};
+
+-------------------Reduce---------------------------------------------------------------------------------------------------------------------------.........
+
+void Reduce(pair p, List<String> medals) {   
+
+  int goldCount = 0
+  int silverCount = 0
+  int bronzeCount = 0
+  
+  foreach m in medals   
+    if m == "Gold" 
+      goldCount += 1
+    else if m == "Silver"
+      silverCount +=1
+    else if m == "Bronze"
+      bronzeCount +=1
+  
+   total = goldCount + silverCount + bronzeCount
+  
+  result = toTuple(goldCount, silverCount, bronzeCount, total)
+  
+  emit(p, result)
+
+  };
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,144 @@
+#--------------------------------------------------
+# Map Reduce Plan
+#--------------------------------------------------
+MapReduce node scope-620
+Map Plan
+grp: Local Rearrange[tuple]{tuple}(false) - scope-577
+|   |
+|   Project[chararray][0] - scope-578
+|   |
+|   Project[chararray][1] - scope-579
+|
+|---nonull: New For Each(false,false,false)[bag] - scope-574
+    |   |
+    |   Project[chararray][1] - scope-563
+    |   |
+    |   Project[chararray][2] - scope-565
+    |   |
+    |   POBinCond[chararray] - scope-571
+    |   |
+    |   |---POIsNull[boolean] - scope-568
+    |   |   |
+    |   |   |---Project[chararray][3] - scope-567
+    |   |
+    |   |---Constant(Not Avail) - scope-569
+    |   |
+    |   |---Project[chararray][3] - scope-570
+    |
+    |---NoHeader: Filter[bag] - scope-559
+        |   |
+        |   Not Equal To[boolean] - scope-562
+        |   |
+        |   |---Constant(ID) - scope-560
+        |   |
+        |   |---Project[chararray][0] - scope-561
+        |
+        |---data: New For Each(false,false,false,false)[bag] - scope-558
+            |   |
+            |   Cast[chararray] - scope-547
+            |   |
+            |   |---Project[bytearray][0] - scope-546
+            |   |
+            |   Cast[chararray] - scope-550
+            |   |
+            |   |---Project[bytearray][1] - scope-549
+            |   |
+            |   Cast[chararray] - scope-553
+            |   |
+            |   |---Project[bytearray][2] - scope-552
+            |   |
+            |   Cast[chararray] - scope-556
+            |   |
+            |   |---Project[bytearray][3] - scope-555
+            |
+            |---data: Load(file:///home/eleni/athlete_events.csv:org.apache.pig.piggybank.storage.CSVExcelStorage) - scope-545--------
+Reduce Plan
+result: Store(fakefile:org.apache.pig.builtin.PigStorage) - scope-619
+|
+|---result: New For Each(true,false,false,false,false)[bag] - scope-618
+    |   |
+    |   Project[tuple][0] - scope-580
+    |   |
+    |   POUserFunc(org.apache.pig.builtin.COUNT)[long] - scope-583
+    |   |
+    |   |---RelationToExpressionProject[bag][*] - scope-582
+    |       |
+    |       |---golds: Filter[bag] - scope-585
+    |           |   |
+    |           |   Equal To[boolean] - scope-588
+    |           |   |
+    |           |   |---Project[chararray][2] - scope-586
+    |           |   |
+    |           |   |---Constant(Gold) - scope-587
+    |           |
+    |           |---Project[bag][1] - scope-584
+    |   |
+    |   POUserFunc(org.apache.pig.builtin.COUNT)[long] - scope-590
+    |   |
+    |   |---RelationToExpressionProject[bag][*] - scope-589
+    |       |
+    |       |---silvers: Filter[bag] - scope-592
+    |           |   |
+    |           |   Equal To[boolean] - scope-595
+    |           |   |
+    |           |   |---Project[chararray][2] - scope-593
+    |           |   |
+    |           |   |---Constant(Silver) - scope-594
+    |           |
+    |           |---Project[bag][1] - scope-591
+    |   |
+    |   POUserFunc(org.apache.pig.builtin.COUNT)[long] - scope-597
+    |   |
+    |   |---RelationToExpressionProject[bag][*] - scope-596
+    |       |
+    |       |---bronzes: Filter[bag] - scope-599
+    |           |   |
+    |           |   Equal To[boolean] - scope-602
+    |           |   |
+    |           |   |---Project[chararray][2] - scope-600
+    |           |   |
+    |           |   |---Constant(Bronze) - scope-601
+    |           |
+    |           |---Project[bag][1] - scope-598
+    |   |
+    |   POUserFunc(org.apache.pig.builtin.COUNT)[long] - scope-604
+    |   |
+    |   |---RelationToExpressionProject[bag][*] - scope-603
+    |       |
+    |       |---total: Filter[bag] - scope-606
+    |           |   |
+    |           |   Or[boolean] - scope-617
+    |           |   |
+    |           |   |---Or[boolean] - scope-613
+    |           |   |   |
+    |           |   |   |---Equal To[boolean] - scope-609
+    |           |   |   |   |
+    |           |   |   |   |---Project[chararray][2] - scope-607
+    |           |   |   |   |
+    |           |   |   |   |---Constant(Gold) - scope-608
+    |           |   |   |
+    |           |   |   |---Equal To[boolean] - scope-612
+    |           |   |       |
+    |           |   |       |---Project[chararray][2] - scope-610
+    |           |   |       |
+    |           |   |       |---Constant(Silver) - scope-611
+    |           |   |
+    |           |   |---Equal To[boolean] - scope-616
+    |           |       |
+    |           |       |---Project[chararray][2] - scope-614
+    |           |       |
+    |           |       |---Constant(Bronze) - scope-615
+    |           |
+    |           |---Project[bag][1] - scope-605
+    |
+    |---grp: Package(Packager)[tuple]{tuple} - scope-576--------
+Global sort: false
+----------------
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+------------------ Map ---------------------------------------------------------------------------------------------------------------------------
+
+void Map(int lineNo, String line) {
+  
+  fields = split line by comma
+  ID = fields[0]
+  Name = fields[1]
+  Medal = fields[14]
+  
+  emit(pair(ID,Name), Medal) 
+};
+
+-------------------Reduce---------------------------------------------------------------------------------------------------------------------------.........
+
+void Reduce(pair p, List<String> medals) {     
+  
+  int goldCount = 0
+  
+  foreach m in medals {  
+    if m == "Gold" 
+      goldCount += 1
+    
+  emit(pair p, goldCount)
+
+  };

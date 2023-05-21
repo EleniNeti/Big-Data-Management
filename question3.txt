@@ -1,0 +1,172 @@
+1900 Summer,France,FRA,12,Croquet
+1900 Summer,USA,USA,7,Golf
+1900 Summer,Italy,ITA,1,Equestrianism
+1900 Summer,Switzerland,SUI,1,Sailing
+1900 Summer,Great Britain,GBR,1,Tennis
+1900 Summer,Czech Republic,BOH,1,Tennis
+1904 Summer,USA,USA,6,Archery
+1906 Summer,Greece,GRE,5,Tennis
+1906 Summer,France,FRA,1,Tennis
+1908 Summer,Great Britain,GBR,39,Archery
+1908 Summer,Sweden,SWE,3,Tennis
+1908 Summer,Germany,GER,2,Figure Skating
+1912 Summer,Sweden,SWE,23,Tennis
+1912 Summer,Great Britain,GBR,10,Swimming
+1912 Summer,Austria,AUT,6,Swimming
+1920 Summer,Great Britain,GBR,16,Swimming
+1920 Summer,USA,USA,14,Swimming
+1920 Summer,Sweden,SWE,13,Swimming
+1924 Summer,France,FRA,31,Art Competitions
+1924 Summer,Great Britain,GBR,28,Swimming
+1924 Summer,USA,USA,24,Swimming
+1924 Winter,Great Britain,GBR,3,Figure Skating
+1924 Winter,Austria,AUT,2,Figure Skating
+1924 Winter,France,FRA,2,Figure Skating
+1924 Winter,USA,USA,2,Figure Skating
+1924 Winter,Canada,CAN,1,Figure Skating
+1924 Winter,Finland,FIN,1,Figure Skating
+1924 Winter,Belgium,BEL,1,Figure Skating
+1924 Winter,Norway,NOR,1,Figure Skating
+1928 Summer,USA,USA,44,Athletics
+1928 Summer,Netherlands,NED,44,Athletics
+1928 Summer,France,FRA,36,Athletics
+1928 Summer,Germany,GER,35,Athletics
+1928 Winter,Germany,GER,5,Figure Skating
+1928 Winter,Austria,AUT,5,Figure Skating
+1928 Winter,Norway,NOR,3,Figure Skating
+1928 Winter,USA,USA,3,Figure Skating
+1928 Winter,Canada,CAN,3,Figure Skating
+1928 Winter,Great Britain,GBR,3,Figure Skating
+1928 Winter,France,FRA,2,Figure Skating
+1932 Summer,USA,USA,74,Art Competitions
+1932 Summer,Japan,JPN,18,Athletics
+1932 Summer,Canada,CAN,17,Swimming
+1932 Summer,Great Britain,GBR,17,Swimming
+1932 Winter,USA,USA,6,Figure Skating
+1932 Winter,Great Britain,GBR,4,Figure Skating
+1932 Winter,Canada,CAN,4,Figure Skating
+1932 Winter,Hungary,HUN,2,Figure Skating
+1936 Summer,USA,USA,46,Athletics
+1936 Summer,Germany,GER,44,Athletics
+1936 Summer,Great Britain,GBR,37,Swimming
+1936 Winter,Great Britain,GBR,10,Figure Skating
+1936 Winter,Austria,AUT,10,Figure Skating
+1936 Winter,USA,USA,9,Figure Skating
+1936 Winter,Germany,GER,7,Alpine Skiing
+1936 Winter,Canada,CAN,7,Alpine Skiing
+1948 Summer,Great Britain,GBR,69,Art Competitions
+1948 Summer,USA,USA,38,Athletics
+1948 Summer,France,FRA,37,Athletics
+1948 Winter,Austria,AUT,12,Alpine Skiing
+1948 Winter,Great Britain,GBR,12,Alpine Skiing
+1948 Winter,Switzerland,SUI,11,Alpine Skiing
+1948 Winter,USA,USA,10,Alpine Skiing
+1952 Summer,Great Britain,GBR,44,Gymnastics
+1952 Summer,USA,USA,41,Gymnastics
+1952 Summer,Russia,URS,40,Gymnastics
+1952 Winter,Norway,NOR,12,Alpine Skiing
+1952 Winter,Germany,GER,12,Alpine Skiing
+1952 Winter,Great Britain,GBR,10,Alpine Skiing
+1952 Winter,USA,USA,10,Alpine Skiing
+1952 Winter,Switzerland,SUI,9,Alpine Skiing
+1952 Winter,Sweden,SWE,9,Alpine Skiing
+1956 Summer,USA,USA,47,Gymnastics
+1956 Summer,Australia,AUS,44,Athletics
+1956 Summer,Russia,URS,39,Gymnastics
+1956 Winter,Italy,ITA,12,Alpine Skiing
+1956 Winter,Germany,GER,11,Alpine Skiing
+1956 Winter,Austria,AUT,10,Alpine Skiing
+1956 Winter,Great Britain,GBR,10,Alpine Skiing
+1956 Winter,USA,USA,10,Alpine Skiing
+1960 Summer,Germany,GER,55,Gymnastics
+1960 Summer,USA,USA,51,Gymnastics
+1960 Summer,Russia,URS,50,Gymnastics
+1960 Winter,Germany,GER,18,Alpine Skiing
+1960 Winter,USA,USA,18,Alpine Skiing
+1960 Winter,Russia,URS,14,Speed Skating
+1960 Winter,Canada,CAN,10,Alpine Skiing
+1964 Summer,USA,USA,79,Gymnastics
+1964 Summer,Russia,URS,63,Gymnastics
+1964 Summer,Germany,GER,62,Gymnastics
+1964 Winter,Germany,GER,23,Speed Skating
+1964 Winter,USA,USA,19,Speed Skating
+1964 Winter,Russia,URS,16,Speed Skating
+1968 Summer,USA,USA,83,Swimming
+1968 Summer,Russia,URS,66,Gymnastics
+1968 Summer,Great Britain,GBR,50,Swimming
+1968 Winter,USA,USA,21,Speed Skating
+1968 Winter,Germany,FRG,20,Cross Country Skiing
+1968 Winter,Russia,URS,20,Speed Skating
+1968 Winter,Canada,CAN,15,Alpine Skiing
+1972 Summer,USA,USA,84,Swimming
+1972 Summer,Germany,FRG,83,Swimming
+1972 Summer,Great Britain,GBR,74,Swimming
+1972 Winter,USA,USA,26,Speed Skating
+1972 Winter,Russia,URS,21,Speed Skating
+1972 Winter,Japan,JPN,20,Alpine Skiing
+1976 Summer,Russia,URS,125,Athletics
+1976 Summer,Canada,CAN,124,Swimming
+1976 Summer,USA,USA,118,Swimming
+1976 Winter,USA,USA,30,Cross Country Skiing
+1976 Winter,Canada,CAN,21,Cross Country Skiing
+1976 Winter,Russia,URS,20,Cross Country Skiing
+1980 Summer,Russia,URS,149,Athletics
+1980 Summer,Germany,GDR,124,Swimming
+1980 Summer,Bulgaria,BUL,88,Gymnastics
+1980 Winter,USA,USA,25,Cross Country Skiing
+1980 Winter,Russia,URS,23,Cross Country Skiing
+1980 Winter,Germany,FRG,19,Speed Skating
+1984 Summer,USA,USA,183,Athletics
+1984 Summer,Canada,CAN,151,Athletics
+1984 Summer,Germany,FRG,123,Gymnastics
+1984 Winter,USA,USA,30,Cross Country Skiing
+1984 Winter,Russia,URS,25,Cross Country Skiing
+1984 Winter,Canada,CAN,20,Cross Country Skiing
+1988 Summer,USA,USA,195,Athletics
+1988 Summer,Russia,URS,162,Athletics
+1988 Summer,South Korea,KOR,132,Gymnastics
+1988 Winter,USA,USA,31,Alpine Skiing
+1988 Winter,Canada,CAN,30,Alpine Skiing
+1988 Winter,Russia,URS,23,Cross Country Skiing
+1992 Summer,USA,USA,190,Athletics
+1992 Summer,Russia,EUN,165,Athletics
+1992 Summer,Germany,GER,163,Athletics
+1992 Winter,USA,USA,50,Cross Country Skiing
+1992 Winter,Russia,EUN,43,Cross Country Skiing
+1992 Winter,Germany,GER,36,Cross Country Skiing
+1994 Winter,USA,USA,52,Cross Country Skiing
+1994 Winter,Russia,RUS,38,Cross Country Skiing
+1994 Winter,Germany,GER,33,Alpine Skiing
+1996 Summer,USA,USA,273,Athletics
+1996 Summer,Germany,GER,187,Athletics
+1996 Summer,China,CHN,183,Gymnastics
+1998 Winter,USA,USA,81,Alpine Skiing
+1998 Winter,Japan,JPN,64,Ice Hockey
+1998 Winter,Canada,CAN,63,Ice Hockey
+2000 Summer,Australia,AUS,276,Athletics
+2000 Summer,USA,USA,253,Athletics
+2000 Summer,Russia,RUS,194,Athletics
+2002 Winter,USA,USA,87,Cross Country Skiing
+2002 Winter,Germany,GER,69,Ice Hockey
+2002 Winter,Russia,RUS,66,Cross Country Skiing
+2004 Summer,USA,USA,254,Athletics
+2004 Summer,China,CHN,247,Swimming
+2004 Summer,Greece,GRE,211,Athletics
+2006 Winter,USA,USA,87,Cross Country Skiing
+2006 Winter,Canada,CAN,83,Speed Skating
+2006 Winter,Russia,RUS,74,Cross Country Skiing
+2008 Summer,China,CHN,289,Swimming
+2008 Summer,USA,USA,282,Athletics
+2008 Summer,Russia,RUS,223,Athletics
+2010 Winter,USA,USA,92,Speed Skating
+2010 Winter,Canada,CAN,88,Ice Hockey
+2010 Winter,Russia,RUS,81,Ice Hockey
+2012 Summer,USA,USA,268,Athletics
+2012 Summer,Great Britain,GBR,257,Swimming
+2012 Summer,Russia,RUS,226,Athletics
+2014 Winter,USA,USA,100,Cross Country Skiing
+2014 Winter,Canada,CAN,96,Cross Country Skiing
+2014 Winter,Russia,RUS,88,Cross Country Skiing
+2016 Summer,USA,USA,291,Athletics
+2016 Summer,China,CHN,241,Swimming
+2016 Summer,Australia,AUS,212,Swimming

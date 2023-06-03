@@ -17,7 +17,10 @@ def convert_csv_to_json(csv_file):
             cast = row['cast'].split(', ')
             json_row['cast'] = cast if cast[0] != '' else []
 
-            json_row['country'] = row['country']
+            # convert the country field to a list
+            country = row['country'].split(', ')
+            json_row['country'] = country if country[0] != '' else []
+
             json_row['date_added'] = row['date_added']
             json_row['release_year'] = int(row['release_year'])
             json_row['rating'] = row['rating']
@@ -34,7 +37,7 @@ def convert_csv_to_json(csv_file):
     return json_data
 
 
-
+# Add your path to the CSV file
 csv_file = 'netflix_titles.csv'
 
 
@@ -44,4 +47,4 @@ json_data = convert_csv_to_json(csv_file)
 with open('netflix_data.json', 'w', encoding='utf-8') as file:
     json.dump(json_data, file, indent=4, ensure_ascii=False)
 
-print("JSON file saved as netflix_data.json.")
+print("Conversion completed. JSON file saved as netflix_data.json.")
